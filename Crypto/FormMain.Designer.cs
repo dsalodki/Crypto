@@ -1,6 +1,6 @@
 ﻿namespace Crypto
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbBinance = new System.Windows.Forms.TextBox();
-            this.tbBybit = new System.Windows.Forms.TextBox();
             this.tbKucoin = new System.Windows.Forms.TextBox();
+            this.tbBybit = new System.Windows.Forms.TextBox();
+            this.tbBinance = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,12 +80,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BTCUSDT";
             // 
-            // tbBinance
+            // tbKucoin
             // 
-            this.tbBinance.Location = new System.Drawing.Point(95, 16);
-            this.tbBinance.Name = "tbBinance";
-            this.tbBinance.Size = new System.Drawing.Size(100, 26);
-            this.tbBinance.TabIndex = 3;
+            this.tbKucoin.Location = new System.Drawing.Point(95, 81);
+            this.tbKucoin.Name = "tbKucoin";
+            this.tbKucoin.Size = new System.Drawing.Size(100, 26);
+            this.tbKucoin.TabIndex = 5;
             // 
             // tbBybit
             // 
@@ -94,21 +94,22 @@
             this.tbBybit.Size = new System.Drawing.Size(100, 26);
             this.tbBybit.TabIndex = 4;
             // 
-            // tbKucoin
+            // tbBinance
             // 
-            this.tbKucoin.Location = new System.Drawing.Point(95, 81);
-            this.tbKucoin.Name = "tbKucoin";
-            this.tbKucoin.Size = new System.Drawing.Size(100, 26);
-            this.tbKucoin.TabIndex = 5;
+            this.tbBinance.Location = new System.Drawing.Point(95, 16);
+            this.tbBinance.Name = "tbBinance";
+            this.tbBinance.Size = new System.Drawing.Size(100, 26);
+            this.tbBinance.TabIndex = 3;
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
